@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Vezetők",
+    "dateExported": "2024-01-26T11:50:15.343Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9a49b12b-54ff-4e5a-bed6-ec3f412a55ed",
+            "colId": "de5a29bb-bf1e-4726-967e-e29966cea15e",
+            "containerId": "",
+            "name": "http://localhost:3000/drivers",
+            "url": "http://localhost:3000/drivers",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-26T11:36:24.264Z",
+            "modified": "2024-01-26T11:36:24.264Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Példa Ferenc\",\n  \"salary\":500000,\n  \"miles\":500\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f06b20e5-8a6f-4a60-866d-a22860afc055",
+            "colId": "de5a29bb-bf1e-4726-967e-e29966cea15e",
+            "containerId": "",
+            "name": "http://localhost:3000/drivers/4",
+            "url": "http://localhost:3000/drivers/4",
+            "method": "PATCH",
+            "sortNum": 20000,
+            "created": "2024-01-26T11:37:25.528Z",
+            "modified": "2024-01-26T11:37:25.528Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Példás Ferenc\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "83df9f97-6a2d-46d7-bb58-7717efc9f723",
+            "colId": "de5a29bb-bf1e-4726-967e-e29966cea15e",
+            "containerId": "",
+            "name": "http://localhost:3000/drivers/4",
+            "url": "http://localhost:3000/drivers/4",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-01-26T11:38:34.272Z",
+            "modified": "2024-01-26T11:38:34.272Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f9e730ad-990f-4211-8a93-67ca7bddbe82",
+            "colId": "de5a29bb-bf1e-4726-967e-e29966cea15e",
+            "containerId": "",
+            "name": "http://localhost:3000/drivers",
+            "url": "http://localhost:3000/drivers",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-26T11:49:42.247Z",
+            "modified": "2024-01-26T11:49:42.247Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d3197550-d7e4-4d59-8639-2eddde2c2fd3",
+            "colId": "de5a29bb-bf1e-4726-967e-e29966cea15e",
+            "containerId": "",
+            "name": "http://localhost:3000/drivers/5",
+            "url": "http://localhost:3000/drivers/5",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-26T11:50:08.439Z",
+            "modified": "2024-01-26T11:50:08.439Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
