@@ -9,3 +9,10 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model stations {
+  id Int @id@default(autoincrement())
+  name String
+  build Int
+  ticketsAvailable Boolean
+}
