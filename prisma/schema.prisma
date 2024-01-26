@@ -16,3 +16,13 @@ model stations {
   build Int
   ticketsAvailable Boolean
 }
+
+
+model drivers {
+  id Int @id@default(autoincrement())
+  name String
+  salary Int
+  miles Int
+}
+
+

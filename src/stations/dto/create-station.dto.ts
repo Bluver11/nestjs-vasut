@@ -1,5 +1,5 @@
 export class CreateStationDto {
   name: string;
-  built: number;
+  build: number;
   ticketsAvailable?: boolean;
 }

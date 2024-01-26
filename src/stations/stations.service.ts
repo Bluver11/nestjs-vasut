@@ -9,7 +9,12 @@ export class StationsService {
   constructor(private readonly db: PrismaService){}
 
   create(createStationDto: CreateStationDto) {
-    return 'This action adds a new station';
+    return this.db.stations.create({
+      data: {
+        ...createStationDto,
+        ticketsAvailable: createStationDto.ticketsAvailable || false,
+      }
+    })
   }
 
   findAll() {
@@ -17,14 +22,21 @@ export class StationsService {
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} station`;
+    return this.db.stations.findFirstOrThrow({
+      where: { id }
+    });
   }
 
   update(id: number, updateStationDto: UpdateStationDto) {
-    return `This action updates a #${id} station`;
+    return this.db.stations.update({
+      data: updateStationDto,
+      where: {  id  }
+    })
   }
 
   remove(id: number) {
-    return `This action removes a #${id} station`;
+    return this.db.stations.delete({
+      where: {  id  }
+    })
   }
 }
